@@ -1,0 +1,46 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url("../images/background_4.png");
+    background-size: cover;
+}
+
+#gameWindow {
+    background-color: #A197CF;
+    /* background-color: #C6ABD4; */
+    /* background-color: #DCBFD9; */
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 500px;
+    
+}
+
+@font-face {
+    font-family: 'WaltographRegular';
+        src: url('/assets/fonts/waltograph/23a40698cd1bb84f930b7a0884c134a6/ab260a56f2b852b78f81eac337e0a2fc/WaltographRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+#gameTitle {
+font-family: 'waltographRegular';
+font-size: 5rem;
+text-align: center;
+}
+
+#startGame {
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+}
+
+#startGame:hover {
+    background-color: #ffffff;
+    border: 2px solid #044db7;
+}
