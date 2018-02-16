@@ -19,17 +19,10 @@ body {
     
 }
 
-@font-face {
-    font-family: 'WaltographRegular';
-        src: url('/assets/fonts/waltograph/23a40698cd1bb84f930b7a0884c134a6/ab260a56f2b852b78f81eac337e0a2fc/WaltographRegular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-      }
-
 #gameTitle {
-font-family: 'waltographRegular';
-font-size: 5rem;
 text-align: center;
+font-size: 60px;
+font-family: "Times New Roman", Times, serif;
 }
 
 #startGame {
@@ -43,4 +36,11 @@ text-align: center;
 #startGame:hover {
     background-color: #ffffff;
     border: 2px solid #044db7;
+}
+
+#timerMessage {
+    font-size: 32px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    margin-top: 10px;
 }
