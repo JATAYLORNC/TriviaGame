@@ -45,3 +45,78 @@ color: indigo;
     text-align: center;
     margin-top: 10px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+
+    #gameWindow {
+        Margin-top: 15%;
+    }
+
+    #gameTitle {
+        font-size: 48px;
+        }
+
+    #startGame {
+        font-size: 2.4rem;
+    }
+
+    #timerMessage {
+        font-size: 22px;
+    }
+}
+
+    @media screen and (min-width: 640px) and (max-width: 767px) {
+
+        #gameWindow {
+            Margin-top: 3.2%;
+            max-height: 430px;
+        }
+    
+        #gameTitle {
+            font-size: 36px;
+            }
+    
+        #startGame {
+            position: relative;
+            margin-top: 100px;
+            text-align: center;
+            font-size: 1.8rem;
+            width: 100%;
+        }
+    
+        #timerMessage {
+            font-size: 17px;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+
+        #gameWindow {
+            Margin-top: 20%;
+            max-height: 430px;
+        }
+    
+        #gameTitle {
+            font-size: 24px;
+            }
+    
+        #startGame {
+            position: relative;
+            margin-top: 100px;
+            text-align: center;
+            font-size: 1.2rem;
+            width: 100%;
+        }
+    
+        #timerMessage {
+            font-size: 14px;
+        }
+
+        body {
+            background-image: url("../images/pixarbackground_420x902.png");
+            background-size: cover;
+        }
+
+    }
+
+}

@@ -78,7 +78,7 @@ $(document).ready(function(){
             question: "What are the names of Charles Muntz's 4 dogs?", 
             a1: "Alpha, Beta, Gamma, Delta", 
             a2: "Alpha, Beta, Gamma, Dug", 
-            a3: "Max, Lollipop, Mary Jane, Tiger", 
+            a3: "Max, Lollipop, M.J., Tiger", 
             a4: "Alpha, Beta, Gamma, Kevin", 
             giphyTag: '<div style="width:100%;height:0;padding-bottom:52%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/13SOv8x3U5SMdW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/reaction-disney-dogs-13SOv8x3U5SMdW"></a></p>',
             answer: 2
@@ -193,6 +193,9 @@ $(document).ready(function(){
             $(this).css({"background-color": "#DCBFD9", "border": "2px solid #486EC3"})},
             function(){$(this).css({"background-color": "initial", "border": "none"})},
         );
+
+        // run test to see if viewport has been resized
+        checkSize();
         
         //display each of the answers
         $("#answer1").text(gameQuestions[qnumber-1].a1);
@@ -298,6 +301,9 @@ $(document).ready(function(){
                 $("#timeoutMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
                 $("#timeoutMessage").text("Out of Time!");
 
+                // run test to see if viewport has been resized
+                checkSize();
+
                 //increment unanswered
                 UnAnswered++;
 
@@ -402,6 +408,10 @@ $(document).ready(function(){
             $(this).css({"background-color": "#DCBFD9", "border": "2px solid #486EC3"})},
             function(){$(this).css({"background-color": "initial", "border": "none"})},
             );
+
+            // run test to see if viewport has been resized
+            checkSize();
+
             $("#score").text("All done, here's how you did!");
 
             $("#numCorrect").text("Correct Answers: " + numberCorrect);
@@ -449,6 +459,9 @@ $(document).ready(function(){
              $("#iaMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
              $("#iaMessage").text("That Is Incorrect!");
 
+             // run test to see if viewport has been resized
+            checkSize();
+
              //display answer GIPHY
              $("#gdiv").append(gTag);
              
@@ -459,6 +472,9 @@ $(document).ready(function(){
              //display the correct answer
              $("#ia2Message").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});                
              $("#ia2Message").text("The correct answer is: " + correctAnswer);
+
+             // run test to see if viewport has been resized
+            checkSize();
 
          } else {
 
@@ -474,6 +490,9 @@ $(document).ready(function(){
              $("#ciMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
              $("#ciMessage").text("You Are Correct!");
 
+             // run test to see if viewport has been resized
+            checkSize();
+
              //display answer GIPHY
              $("#gdiv").append(gTag);
 
@@ -483,7 +502,61 @@ $(document).ready(function(){
 
          //confirm whether the question count has reached 10
          setTimeout(checkQuestionCount, 5000);
+    }
+    
+    //Function to the css rule
+    function checkSize(){
+        if ($("#gameTitle").css("font-size") == "48px"){
+            $("#gameQuestion").css({"font-size": "22px"});
+            $("#answer1").css({"font-size": "30px"});
+            $("#answer2").css({"font-size": "30px"});
+            $("#answer3").css({"font-size": "30px"});
+            $("#answer4").css({"font-size": "30px"});
+            $("#iaMessage").css({"font-size": "22px"});
+            $("#ia2Message").css({"font-size": "19px"});
+            $("#ciMessage").css({"font-size": "22px"});
+            $("#timeoutMessage").css({"font-size": "22px"});
+            $("#score").css({"font-size": "22px"});
+            $("#numCorrect").css({"font-size": "19px"});
+            $("#numWrong").css({"font-size": "19px"});
+            $("#noAnswer").css({"font-size": "19px"});
+            $("#startOver").css({"font-size": "30px"});
+        }
 
-    }    
+        if ($("#gameTitle").css("font-size") == "36px"){
+            $("#gameQuestion").css({"font-size": "17px"});
+            $("#answer1").css({"font-size": "24px"});
+            $("#answer2").css({"font-size": "24px"});
+            $("#answer3").css({"font-size": "24px"});
+            $("#answer4").css({"font-size": "24px"});
+            $("#iaMessage").css({"font-size": "17px"});
+            $("#ia2Message").css({"font-size": "14px"});
+            $("#ciMessage").css({"font-size": "22px"});
+            $("#timeoutMessage").css({"font-size": "22px"});
+            $("#score").css({"font-size": "22px"});
+            $("#numCorrect").css({"font-size": "14px"});
+            $("#numWrong").css({"font-size": "14px"});
+            $("#noAnswer").css({"font-size": "14px"});
+            $("#startOver").css({"font-size": "24px"});
+        }
 
+        if ($("#gameTitle").css("font-size") == "24px"){
+            $("#gameQuestion").css({"font-size": "14px"});
+            $("#answer1").css({"font-size": "20px"});
+            $("#answer2").css({"font-size": "20px"});
+            $("#answer3").css({"font-size": "20px"});
+            $("#answer4").css({"font-size": "20px"});
+            $("#iaMessage").css({"font-size": "14px"});
+            $("#ia2Message").css({"font-size": "11px"});
+            $("#ciMessage").css({"font-size": "19px"});
+            $("#timeoutMessage").css({"font-size": "19px"});
+            $("#score").css({"font-size": "19px"});
+            $("#numCorrect").css({"font-size": "11px"});
+            $("#numWrong").css({"font-size": "11px"});
+            $("#noAnswer").css({"font-size": "11px"});
+            $("#startOver").css({"font-size": "20px"});
+        }
+
+    }
+    
 });
