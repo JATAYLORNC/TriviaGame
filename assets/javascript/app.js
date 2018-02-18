@@ -62,7 +62,7 @@ $(document).ready(function(){
             a2: "1225 Sycamore Street", 
             a3: "324 Oak Tree Lane", 
             a4: "1200 Park Avenue", 
-            giphyTag: '<div style="width:100%;height:0;padding-bottom:56%;position:relative;", id="giphydiv"><iframe src="https://giphy.com/embed/lKEstjh615lrW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disney-pixar-disney-toy-story-3-lKEstjh615lrW"></a></p>',
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:56%;position:relative;", id="giphydiv"><iframe src="https://giphy.com/embed/lKEstjh615lrW" width="100%" height="99%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disney-pixar-disney-toy-story-3-lKEstjh615lrW"></a></p>',
             answer: 2
         },
         {
@@ -71,7 +71,7 @@ $(document).ready(function(){
             a2: "Hot Air Balloon Operator", 
             a3: "Balloon Salesman", 
             a4: "Aviator", 
-            giphyTag: '<div style="width:100%;height:0;padding-bottom:56%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/EA8GA5ZkkcSoU" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disneypixar-disney-pixar-EA8GA5ZkkcSoU"></a></p>',
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:56%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/EA8GA5ZkkcSoU" width="100%" height="99%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disneypixar-disney-pixar-EA8GA5ZkkcSoU"></a></p>',
             answer: 3
         },
         {
@@ -222,72 +222,8 @@ $(document).ready(function(){
             //assign the answer number to the variable userGuess
             userGuess = 1;
 
-            //change boolean to indicate that the user has selected an answer
-            guess = true;
-
-            //stop the timer when an answer has been selected
-            clearInterval(timerIntervalId);
-
-            //change timerRunning boolean to indicate that the timer is no longer running
-            timerRunning = false;
-
-            //reset time
-            time = 30;
-
-            //increment qnumber for next question
-            qnumber++;
-
-            //conditional statement to display message indicating whether answer is correct or not
-            if (userGuess != correctAnswerIndex) {
-
-                //clear display for next question
-                $("#gameQuestion").remove();    
-                $("#answer1").remove();
-                $("#answer2").remove();
-                $("#answer3").remove();
-                $("#answer4").remove();
-
-                //message indicating incorrect answer
-                $("#qdiv").append("<p id='iaMessage'></p>");
-                $("#iaMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});
-                $("#iaMessage").text("That Is Incorrect!");
-                
-                //increment wrong answer count
-                wrongAnswer++;
-
-                $("#qdiv").append("<p id='ia2Message'></p>");
-                //display the correct answer
-                $("#ia2Message").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});                
-                $("#ia2Message").text("The correct answer is: " + correctAnswer);
-
-                //display answer GIPHY
-                $("#gdiv").append(gTag);
-
-            } else {
-
-                //clear display for next question
-                $("#gameQuestion").remove();    
-                $("#answer1").remove();
-                $("#answer2").remove();
-                $("#answer3").remove();
-                $("#answer4").remove();
-
-                //message indicating correct answer
-                $("#qdiv").append("<p id='ciMessage'></p>");
-                $("#ciMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
-                $("#ciMessage").text("You  Are Correct!");
-
-                //display answer GIPHY
-                $("#gdiv").append(gTag);
-
-                //increment number correct
-                numberCorrect++
-
-            }
-
-            //confirm whether the question count has reached 10
-            setTimeout(checkQuestionCount, 5000);
-
+            displayAnswer();
+            
         });
 
         //define click event for selection of answer 2
@@ -296,71 +232,7 @@ $(document).ready(function(){
             //assign the answer number to the variable userGuess
             userGuess = 2;
 
-            //change boolean to indicate that the user has selected an answer
-            guess = true;
-
-            //stop the timer when an answer has been selected
-            clearInterval(timerIntervalId);
-
-            //change timerRunning boolean to indicate that the timer is no longer running
-            timerRunning = false;
-
-            //reset time
-            time = 30;
-
-            //increment qnumber for next question
-            qnumber++;
-
-            //conditional statement to display message indicating whether answer is correct or not
-            if (userGuess != correctAnswerIndex) {
-
-                //clear display for next question
-                $("#gameQuestion").remove();    
-                $("#answer1").remove();
-                $("#answer2").remove();
-                $("#answer3").remove();
-                $("#answer4").remove();
-
-                //message indicating incorrect answer
-                $("#qdiv").append("<p id='iaMessage'></p>");
-                $("#iaMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
-                $("#iaMessage").text("That Is Incorrect!");
-
-                //display answer GIPHY
-                $("#gdiv").append(gTag);
-                
-                //increment wrong answer count
-                wrongAnswer++;
-
-                $("#qdiv").append("<p id='ia2Message'></p>");
-                //display the correct answer
-                $("#ia2Message").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});                
-                $("#ia2Message").text("The correct answer is: " + correctAnswer);
-
-            } else {
-
-                //clear display for next question
-                $("#gameQuestion").remove();    
-                $("#answer1").remove();
-                $("#answer2").remove();
-                $("#answer3").remove();
-                $("#answer4").remove();
-
-                //message indicating correct answer
-                $("#qdiv").append("<p id='ciMessage'></p>");
-                $("#ciMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
-                $("#ciMessage").text("You Are Correct!");
-
-                //display answer GIPHY
-                $("#gdiv").append(gTag);
-                
-                //increment number correct
-                numberCorrect++
-
-            }
-
-            //confirm whether the question count has reached 10
-            setTimeout(checkQuestionCount, 5000);
+            displayAnswer();
 
         });
 
@@ -370,72 +242,7 @@ $(document).ready(function(){
             //assign the answer number to the variable userGuess
             userGuess = 3;
 
-            //change boolean to indicate that the user has selected an answer
-            guess = true;
-
-            //stop the timer when an answer has been selected
-            clearInterval(timerIntervalId);
-
-            //change timerRunning boolean to indicate that the timer is no longer running
-            timerRunning = false;
-
-            //reset time
-            time = 30;
-
-
-            //increment qnumber for next question
-            qnumber++;
-
-            //conditional statement to display message indicating whether answer is correct or not
-            if (userGuess != correctAnswerIndex) {
-
-                //clear display for next question
-                $("#gameQuestion").remove();    
-                $("#answer1").remove();
-                $("#answer2").remove();
-                $("#answer3").remove();
-                $("#answer4").remove();
-
-                //message indicating incorrect answer
-                $("#qdiv").append("<p id='iaMessage'></p>");
-                $("#iaMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
-                $("#iaMessage").text("That Is Incorrect!");
-
-                //display answer GIPHY
-                $("#gdiv").append(gTag);
-                
-                //increment wrong answer count
-                wrongAnswer++;
-
-                $("#qdiv").append("<p id='ia2Message'></p>");
-                //display the correct answer
-                $("#ia2Message").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});                
-                $("#ia2Message").text("The correct answer is: " + correctAnswer);
-
-            } else {
-
-                //clear display for next question
-                $("#gameQuestion").remove();    
-                $("#answer1").remove();
-                $("#answer2").remove();
-                $("#answer3").remove();
-                $("#answer4").remove();
-
-                //message indicating correct answer
-                $("#qdiv").append("<p id='ciMessage'></p>");
-                $("#ciMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
-                $("#ciMessage").text("You Are Correct!");
-
-                //display answer GIPHY
-                $("#gdiv").append(gTag);
-
-                //increment number correct
-                numberCorrect++
-
-            }
-
-            //confirm whether the question count has reached 10
-            setTimeout(checkQuestionCount, 5000);
+            displayAnswer();
 
         });
 
@@ -445,70 +252,7 @@ $(document).ready(function(){
             //assign the answer number to the variable userGuess
             userGuess = 4;
 
-            //change boolean to indicate that the user has selected an answer
-            guess = true;
-
-            //stop the timer when an answer has been selected
-            clearInterval(timerIntervalId);
-
-            //change timerRunning boolean to indicate that the timer is no longer running
-            timerRunning=false;
-
-            //reset time
-            time = 30;
-
-            //increment qnumber for next question
-            qnumber++;
-
-            //conditional statement to display message indicating whether answer is correct or not
-            if (userGuess != correctAnswerIndex) {
-
-                //clear display for next question
-                $("#gameQuestion").remove();    
-                $("#answer1").remove();
-                $("#answer2").remove();
-                $("#answer3").remove();
-                $("#answer4").remove();
-
-                //message indicating incorrect answer
-                $("#qdiv").append("<p id='iaMessage'></p>");
-                $("#iaMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
-                $("#iaMessage").text("That Is Incorrect!");
-
-                //display answer GIPHY
-                $("#gdiv").append(gTag);
-                
-                //increment wrong answer count
-                wrongAnswer++;
-
-                $("#qdiv").append("<p id='ia2Message'></p>");
-                //display the correct answer
-                $("#ia2Message").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});                
-                $("#ia2Message").text("The correct answer is: " + correctAnswer);
-
-            } else {
-
-                //clear display for next question
-                $("#gameQuestion").remove();    
-                $("#answer1").remove();
-                $("#answer2").remove();
-                $("#answer3").remove();
-                $("#answer4").remove();
-
-                //message indicating correct answer
-                $("#qdiv").append("<p id='ciMessage'></p>");
-                $("#ciMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
-                $("#ciMessage").text("You Are Correct!");
-
-                //display answer GIPHY
-                $("#gdiv").append(gTag);
-
-                //increment number correct
-                numberCorrect++
-            }
-
-            //confirm whether the question count has reached 10
-            setTimeout(checkQuestionCount, 5000);
+            displayAnswer();
 
         });
     }
@@ -529,8 +273,15 @@ $(document).ready(function(){
         $("#timerMessage").text("Time Remaining: " + time + " seconds");
         
         } else {
+            
+            //stop the timer when an answer has been selected
             clearInterval(timerIntervalId);
-            timerRunning = false;
+
+            //change timerRunning boolean to indicate that the timer is no longer running
+            timerRunning=false;
+
+            //reset time
+            time = 30;
             
             //conditional statement for whether or not user selected an answer
             if (!guess) {
@@ -551,12 +302,12 @@ $(document).ready(function(){
                 UnAnswered++;
 
                 //display the correct answer
-                $("#a1div").append("<p id='caMessage'></p>");
+                $("#qdiv").append("<p id='caMessage'></p>");
                 $("#caMessage").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});                
                 $("#caMessage").text("The correct answer is: " + correctAnswer);
 
-                //reset time
-                time =  30;
+                //display answer GIPHY                
+                    $("#gdiv").append(gTag);
 
                 //increment qnumber for next question
                 qnumber++;
@@ -665,4 +416,74 @@ $(document).ready(function(){
 
         } 
     }
+    
+    function displayAnswer() {
+
+         //change boolean to indicate that the user has selected an answer
+         guess = true;
+
+         //stop the timer when an answer has been selected
+         clearInterval(timerIntervalId);
+
+         //change timerRunning boolean to indicate that the timer is no longer running
+         timerRunning=false;
+
+         //reset time
+         time = 30;
+
+         //increment qnumber for next question
+         qnumber++;
+
+         //conditional statement to display message indicating whether answer is correct or not
+         if (userGuess != correctAnswerIndex) {
+
+             //clear display for next question
+             $("#gameQuestion").remove();    
+             $("#answer1").remove();
+             $("#answer2").remove();
+             $("#answer3").remove();
+             $("#answer4").remove();
+
+             //message indicating incorrect answer
+             $("#qdiv").append("<p id='iaMessage'></p>");
+             $("#iaMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
+             $("#iaMessage").text("That Is Incorrect!");
+
+             //display answer GIPHY
+             $("#gdiv").append(gTag);
+             
+             //increment wrong answer count
+             wrongAnswer++;
+
+             $("#qdiv").append("<p id='ia2Message'></p>");
+             //display the correct answer
+             $("#ia2Message").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});                
+             $("#ia2Message").text("The correct answer is: " + correctAnswer);
+
+         } else {
+
+             //clear display for next question
+             $("#gameQuestion").remove();    
+             $("#answer1").remove();
+             $("#answer2").remove();
+             $("#answer3").remove();
+             $("#answer4").remove();
+
+             //message indicating correct answer
+             $("#qdiv").append("<p id='ciMessage'></p>");
+             $("#ciMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
+             $("#ciMessage").text("You Are Correct!");
+
+             //display answer GIPHY
+             $("#gdiv").append(gTag);
+
+             //increment number correct
+             numberCorrect++
+         }
+
+         //confirm whether the question count has reached 10
+         setTimeout(checkQuestionCount, 5000);
+
+    }    
+
 });

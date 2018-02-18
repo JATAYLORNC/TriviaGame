@@ -4,14 +4,13 @@ html, body {
 }
 
 body {
-    background-image: url("../images/background_4.png");
+    background-image: url("../images/pixarbackground.png");
     background-size: cover;
 }
 
 #gameWindow {
     background-color: #A197CF;
-    /* background-color: #C6ABD4; */
-    /* background-color: #DCBFD9; */
+    border: 2px solid indigo;
 
     margin-top: 5%;
     margin-bottom: 5%;
