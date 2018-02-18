@@ -23,6 +23,7 @@ body {
 text-align: center;
 font-size: 60px;
 font-family: "Times New Roman", Times, serif;
+color: indigo;
 }
 
 #startGame {
@@ -39,7 +40,8 @@ font-family: "Times New Roman", Times, serif;
 }
 
 #timerMessage {
-    font-size: 32px;
+    font-size: 28px;
+    font-weight: bold;
     font-family: "Times New Roman", Times, serif;
     text-align: center;
     margin-top: 10px;

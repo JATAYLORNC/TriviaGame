@@ -3,59 +3,21 @@ $(document).ready(function(){
     //Create Game Question Object Array
     var gameQuestions = [
         {
-            question: "What magical creature lead Merida to a witch in 'Brave'?", 
-            a1: "Goblins", 
-            a2: "Will O' The Wisps", 
-            a3: "Ghosts", 
-            a4: "Selkies", 
-            answer: 2
-        },
-        {
-            question: "Before he became Syndrome, he wore rocket boots and called himself what?", 
-            a1: "Incrediboy", 
-            a2: "Incredikid", 
-            a3: "The Aviator", 
-            a4: " Rocket Boy", 
-            answer: 1
-        },
-        {
-            question: "What are the 5 emotions in the movie 'Inside Out'?", 
-            a1: "Anger, Joy, Hunger, Disgust, Sadness", 
-            a2: "Fear, Anger, Disgust, Sadness, Humor", 
-            a3: "Blue, Green, Red, Yellow, Light Blue", 
-            a4: "Disgust, Fear, Joy, Anger, Sadness", 
-            answer: 4
-        },
-        {
-            question: "What is Edna Mode's nickname?", 
-            a1: "Fashionista", 
-            a2: "Diva", 
-            a3: "E", 
-            a4: "M", 
+            question: "Which one is not Merida's brother?", 
+            a1: "Harris", 
+            a2: "Hamish", 
+            a3: "Humphrey", 
+            a4: "Hubert", 
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:43%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/WFEZyFxxmZ0Vq" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disneypixar-animation-disney-boys-WFEZyFxxmZ0Vq"></a></p>',
             answer: 3
         },
         {
-            question: "What is the name of the young boy in 'The Good Dinosaur'?", 
-            a1: "Grog", 
-            a2: "Spot", 
-            a3: "Fido", 
-            a4: "Zog", 
-            answer: 2
-        },
-        {
-            question: "What town does Miguel Rivera come from?", 
-            a1: "Santa Cecilia", 
-            a2: "Lomas Lindas", 
-            a3: "Corpus Christi", 
-            a4: "San Miguel", 
-            answer: 1
-        },
-        {
-            question: "Which card did not race against Doc Hudson?", 
-            a1: "Louise 'Barnstormer' Nash", 
-            a2: "Junior 'Midnight' Moon", 
-            a3: "River Scott", 
-            a4: "Smokey", 
+            question: "How old is Carl Fredricksen", 
+            a1: "82", 
+            a2: "29", 
+            a3: "70", 
+            a4: "78", 
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:56%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/hNU4HmhtpMPTO" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disney-pixar-up-disney-hNU4HmhtpMPTO"></a></p>',
             answer: 4
         },
         {
@@ -64,13 +26,52 @@ $(document).ready(function(){
             a2: "Sid", 
             a3: "Molly", 
             a4: "Andy", 
-            answer: 2},
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:55%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/RIVu1bR7N2jEA" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disney-laughing-pixar-RIVu1bR7N2jEA"></a></p>',
+            answer: 2
+        },
+        {
+            question: "What is Edna Mode's nickname?", 
+            a1: "Fashionista", 
+            a2: "Diva", 
+            a3: "E", 
+            a4: "M", 
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:42%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/zuQTdinwThT20" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/the-incredibles-edna-mode-best-scene-zuQTdinwThT20"></a></p>',
+            answer: 3
+        },
+        {
+            question: "What is the name of the young boy in 'The Good Dinosaur'?", 
+            a1: "Grog", 
+            a2: "Spot", 
+            a3: "Fido", 
+            a4: "Zog", 
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:42%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/l9CSJHK88kMTe" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><pid="viaGiphy"><a href="https://giphy.com/gifs/disney-pixar-disney-the-good-dinosaur-l9CSJHK88kMTe"></a></p>',
+            answer: 2
+        },
+        {
+            question: "What town does Miguel Rivera come from?", 
+            a1: "Santa Cecilia", 
+            a2: "Lomas Lindas", 
+            a3: "Corpus Christi", 
+            a4: "San Miguel", 
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:42%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/3ohfFi82eai7LjcdJS" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/am85-mexico-3ohfFi82eai7LjcdJS"></a></p>',
+            answer: 1
+        },
+        {
+            question: "Where does Bonnie live?", 
+            a1: "234 Elm Street", 
+            a2: "1225 Sycamore Street", 
+            a3: "324 Oak Tree Lane", 
+            a4: "1200 Park Avenue", 
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:56%;position:relative;", id="giphydiv"><iframe src="https://giphy.com/embed/lKEstjh615lrW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disney-pixar-disney-toy-story-3-lKEstjh615lrW"></a></p>',
+            answer: 2
+        },
         {
             question: "What job did Carl Fredriksen hold before he retired?", 
             a1: "Pilot", 
             a2: "Hot Air Balloon Operator", 
             a3: "Balloon Salesman", 
             a4: "Aviator", 
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:56%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/EA8GA5ZkkcSoU" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disneypixar-disney-pixar-EA8GA5ZkkcSoU"></a></p>',
             answer: 3
         },
         {
@@ -79,88 +80,18 @@ $(document).ready(function(){
             a2: "Alpha, Beta, Gamma, Dug", 
             a3: "Max, Lollipop, Mary Jane, Tiger", 
             a4: "Alpha, Beta, Gamma, Kevin", 
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:52%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/13SOv8x3U5SMdW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/reaction-disney-dogs-13SOv8x3U5SMdW"></a></p>',
             answer: 2
-        },
-        {
-            question: "What is the musical that Wall-E watches repeatedly", 
-            a1: "Hello Dolly", 
-            a2: "Dr. Doolittle (the original version", 
-            a3: "My Fair Lady", 
-            a4: "The Fantastiks", 
-            answer: 1
         },
         {
             question: "How much does Mr. Incredible weigh?", 
             a1: "300 pounds", 
             a2: "350 pounds", 
             a3: "275 pounds", 
-            a4: "Way too much", 
+            a4: "Way too much",
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:52%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/g18rgL6Ou0ODC" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disney-pixar-the-incredibles-g18rgL6Ou0ODC"></a></p>', 
             answer: 2
         },
-        {
-            question: "How old is Carl Fredricksen", 
-            a1: "82", 
-            a2: "29", 
-            a3: "70", 
-            a4: "78", 
-            answer: 4
-        },
-        {
-            question: "Where does Andy live?", 
-            a1: "234 Elm Street", 
-            a2: "1225 Sycamore Street", 
-            a3: "324 Oak Tree Lane", 
-            a4: "1200 Park Avenue", 
-            answer: 1
-        },
-        {
-            question: "Which one is not Merida's brother?", 
-            a1: "Harris", 
-            a2: "Hamish", 
-            a3: "Humphrey", 
-            a4: "Hubert", 
-            answer: 3
-        },
-        {
-            question: "", 
-            a1: "", 
-            a2: "", 
-            a3: "", 
-            a4: "", 
-            answer: 1
-        },
-        {
-            question: "",
-            a1: "", 
-            a2: "", 
-            a3: "", 
-            a4: "", 
-            answer: 4
-        },
-        {
-            question: "", 
-            a1: "", 
-            a2: "", 
-            a3: "", 
-            a4: "", 
-            answer: 4
-        },
-        {
-            question: "", 
-            a1: "", 
-            a2: "", 
-            a3: "", 
-            a4: "", 
-            answer: 2
-        },
-        {
-            question: "What toy did Wall-E show to Eve", 
-            a1: "Lego Bricks", 
-            a2: "Rex the Dinosaur", 
-            a3: "Rubik's Cube", 
-            a4: "Mr. Potato Head", 
-            answer: 3
-        }
     ];
 
     //variable that will hold the setInterval that runs the timer
@@ -199,6 +130,9 @@ $(document).ready(function(){
     //Boolean to prevent display function from starting new timer if one is already running
     var timerRunning = false;
 
+    //variable to hold the iframe tag for the animated giphy
+    var gTag;
+
     //function to start the game 
     $("#startGame").click(function() {
 
@@ -206,14 +140,11 @@ $(document).ready(function(){
 
 
         displayQuestion();
-        console.log("startGame calls displayQuestion");
         
     });
 
         //display the question and the 4 possible answers
     function displayQuestion() {
-
-        console.log("displayQuestion called");
 
         //conditional statement to ensure the timer only gets started one time for each call to displayQuestion
         if(!timerRunning) {
@@ -230,7 +161,7 @@ $(document).ready(function(){
         $("#qdiv").append("<p id='gameQuestion'></p>");
 
         //style <p> tag for question
-        $("#gameQuestion").css({"font-size": "32px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});
+        $("#gameQuestion").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});
 
         //display the question
         $("#gameQuestion").text(gameQuestions[qnumber-1].question);
@@ -242,22 +173,22 @@ $(document).ready(function(){
         $("#a4div").append("<p id='answer4'></p>");
 
         //style <p> tags
-        $("#answer1").css({"font-size": "32px", "text-align": "center", "font-weight": "bold"});
+        $("#answer1").css({"font-size": "38px", "text-align": "center"});
         $("#answer1").hover(function(){
             $(this).css({"background-color": "#DCBFD9", "border": "2px solid #486EC3"})},
             function(){$(this).css({"background-color": "initial", "border": "none"})},
         );
-        $("#answer2").css({"font-size": "32px", "text-align": "center", "font-weight": "bold"});
+        $("#answer2").css({"font-size": "38px", "text-align": "center"});
         $("#answer2").hover(function(){
             $(this).css({"background-color": "#DCBFD9", "border": "2px solid #486EC3"})},
-            function(){$(this).css({"background-color": "initial", "border": "none"})},
+            function(){$(this).css({"background-color": "initial", "border": "none", })},
         );
-        $("#answer3").css({"font-size": "32px", "text-align": "center", "font-weight": "bold"});
+        $("#answer3").css({"font-size": "38px", "text-align": "center"});
         $("#answer3").hover(function(){
             $(this).css({"background-color": "#DCBFD9", "border": "2px solid #486EC3"})},
             function(){$(this).css({"background-color": "initial", "border": "none"})},
         );
-        $("#answer4").css({"font-size": "32px", "text-align": "center", "font-weight": "bold"});
+        $("#answer4").css({"font-size": "38px", "text-align": "center"});
         $("#answer4").hover(function(){
             $(this).css({"background-color": "#DCBFD9", "border": "2px solid #486EC3"})},
             function(){$(this).css({"background-color": "initial", "border": "none"})},
@@ -268,6 +199,9 @@ $(document).ready(function(){
         $("#answer2").text(gameQuestions[qnumber-1].a2);
         $("#answer3").text(gameQuestions[qnumber-1].a3);
         $("#answer4").text(gameQuestions[qnumber-1].a4);
+
+        //grab giphyTag
+        gTag = gameQuestions[qnumber-1].giphyTag;
 
         //assign correct answer index to variable
         correctAnswerIndex = gameQuestions[qnumber-1].answer;
@@ -300,33 +234,54 @@ $(document).ready(function(){
             //reset time
             time = 30;
 
-            console.log("----------------------------------------");
-            console.log(qnumber);
             //increment qnumber for next question
             qnumber++;
-            console.log("qnumber incremented click 1");
-            console.log(qnumber);
-            console.log("----------------------------------------");
 
             //conditional statement to display message indicating whether answer is correct or not
             if (userGuess != correctAnswerIndex) {
+
+                //clear display for next question
+                $("#gameQuestion").remove();    
+                $("#answer1").remove();
+                $("#answer2").remove();
+                $("#answer3").remove();
+                $("#answer4").remove();
+
+                //message indicating incorrect answer
+                $("#qdiv").append("<p id='iaMessage'></p>");
+                $("#iaMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});
+                $("#iaMessage").text("That Is Incorrect!");
                 
                 //increment wrong answer count
                 wrongAnswer++;
-                
-                //message indicating incorrect answer
-                $("#gameQuestion").text("Nope!");
 
+                $("#qdiv").append("<p id='ia2Message'></p>");
                 //display the correct answer
-                $("#answer1").text("The correct answer is: " + correctAnswer);
+                $("#ia2Message").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});                
+                $("#ia2Message").text("The correct answer is: " + correctAnswer);
+
+                //display answer GIPHY
+                $("#gdiv").append(gTag);
 
             } else {
 
-                //increment number correct
-                numberCorrect++
+                //clear display for next question
+                $("#gameQuestion").remove();    
+                $("#answer1").remove();
+                $("#answer2").remove();
+                $("#answer3").remove();
+                $("#answer4").remove();
 
                 //message indicating correct answer
-                $("#gameQuestion").text("Correct!");
+                $("#qdiv").append("<p id='ciMessage'></p>");
+                $("#ciMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
+                $("#ciMessage").text("You  Are Correct!");
+
+                //display answer GIPHY
+                $("#gdiv").append(gTag);
+
+                //increment number correct
+                numberCorrect++
 
             }
 
@@ -353,33 +308,54 @@ $(document).ready(function(){
             //reset time
             time = 30;
 
-            console.log("----------------------------------------");
-            console.log(qnumber);
             //increment qnumber for next question
             qnumber++;
-            console.log("qnumber incremented click 2");
-            console.log(qnumber);
-            console.log("----------------------------------------");
 
             //conditional statement to display message indicating whether answer is correct or not
             if (userGuess != correctAnswerIndex) {
 
+                //clear display for next question
+                $("#gameQuestion").remove();    
+                $("#answer1").remove();
+                $("#answer2").remove();
+                $("#answer3").remove();
+                $("#answer4").remove();
+
+                //message indicating incorrect answer
+                $("#qdiv").append("<p id='iaMessage'></p>");
+                $("#iaMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
+                $("#iaMessage").text("That Is Incorrect!");
+
+                //display answer GIPHY
+                $("#gdiv").append(gTag);
+                
                 //increment wrong answer count
                 wrongAnswer++;
 
-                //message indicating incorrect answer
-                $("#gameQuestion").text("Nope!");
-
+                $("#qdiv").append("<p id='ia2Message'></p>");
                 //display the correct answer
-                $("#answer1").text("The correct answer is: " + correctAnswer);
+                $("#ia2Message").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});                
+                $("#ia2Message").text("The correct answer is: " + correctAnswer);
 
             } else {
 
-                //increment number correct
-                numberCorrect++
+                //clear display for next question
+                $("#gameQuestion").remove();    
+                $("#answer1").remove();
+                $("#answer2").remove();
+                $("#answer3").remove();
+                $("#answer4").remove();
 
                 //message indicating correct answer
-                $("#gameQuestion").text("Correct!");
+                $("#qdiv").append("<p id='ciMessage'></p>");
+                $("#ciMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
+                $("#ciMessage").text("You Are Correct!");
+
+                //display answer GIPHY
+                $("#gdiv").append(gTag);
+                
+                //increment number correct
+                numberCorrect++
 
             }
 
@@ -406,33 +382,55 @@ $(document).ready(function(){
             //reset time
             time = 30;
 
-            console.log("----------------------------------------");
-            console.log(qnumber);
+
             //increment qnumber for next question
             qnumber++;
-            console.log("qnumber incremented click 3");
-            console.log(qnumber);
-            console.log("----------------------------------------");
 
             //conditional statement to display message indicating whether answer is correct or not
             if (userGuess != correctAnswerIndex) {
 
+                //clear display for next question
+                $("#gameQuestion").remove();    
+                $("#answer1").remove();
+                $("#answer2").remove();
+                $("#answer3").remove();
+                $("#answer4").remove();
+
+                //message indicating incorrect answer
+                $("#qdiv").append("<p id='iaMessage'></p>");
+                $("#iaMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
+                $("#iaMessage").text("That Is Incorrect!");
+
+                //display answer GIPHY
+                $("#gdiv").append(gTag);
+                
                 //increment wrong answer count
                 wrongAnswer++;
 
-                //message indicating incorrect answer
-                $("#gameQuestion").text("Nope!");
-
+                $("#qdiv").append("<p id='ia2Message'></p>");
                 //display the correct answer
-                $("#answer1").text("The correct answer is: " + correctAnswer);
+                $("#ia2Message").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});                
+                $("#ia2Message").text("The correct answer is: " + correctAnswer);
 
             } else {
 
-                //increment number correct
-                numberCorrect++
+                //clear display for next question
+                $("#gameQuestion").remove();    
+                $("#answer1").remove();
+                $("#answer2").remove();
+                $("#answer3").remove();
+                $("#answer4").remove();
 
                 //message indicating correct answer
-                $("#gameQuestion").text("Correct!");
+                $("#qdiv").append("<p id='ciMessage'></p>");
+                $("#ciMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
+                $("#ciMessage").text("You Are Correct!");
+
+                //display answer GIPHY
+                $("#gdiv").append(gTag);
+
+                //increment number correct
+                numberCorrect++
 
             }
 
@@ -459,30 +457,51 @@ $(document).ready(function(){
             //reset time
             time = 30;
 
-            console.log("----------------------------------------");
-            console.log(qnumber);
             //increment qnumber for next question
             qnumber++;
-            console.log("qnumber incremented click 4");
-            console.log(qnumber);
-            console.log("----------------------------------------");
 
             //conditional statement to display message indicating whether answer is correct or not
             if (userGuess != correctAnswerIndex) {
 
+                //clear display for next question
+                $("#gameQuestion").remove();    
+                $("#answer1").remove();
+                $("#answer2").remove();
+                $("#answer3").remove();
+                $("#answer4").remove();
+
+                //message indicating incorrect answer
+                $("#qdiv").append("<p id='iaMessage'></p>");
+                $("#iaMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
+                $("#iaMessage").text("That Is Incorrect!");
+
+                //display answer GIPHY
+                $("#gdiv").append(gTag);
+                
                 //increment wrong answer count
                 wrongAnswer++;
 
-                //message indicating incorrect answer
-                $("#gameQuestion").text("Nope!");
-
+                $("#qdiv").append("<p id='ia2Message'></p>");
                 //display the correct answer
-                $("#answer1").text("The correct answer is: " + correctAnswer);
+                $("#ia2Message").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});                
+                $("#ia2Message").text("The correct answer is: " + correctAnswer);
 
             } else {
 
+                //clear display for next question
+                $("#gameQuestion").remove();    
+                $("#answer1").remove();
+                $("#answer2").remove();
+                $("#answer3").remove();
+                $("#answer4").remove();
+
                 //message indicating correct answer
-                $("#gameQuestion").text("Correct!");
+                $("#qdiv").append("<p id='ciMessage'></p>");
+                $("#ciMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
+                $("#ciMessage").text("You Are Correct!");
+
+                //display answer GIPHY
+                $("#gdiv").append(gTag);
 
                 //increment number correct
                 numberCorrect++
@@ -515,33 +534,32 @@ $(document).ready(function(){
             
             //conditional statement for whether or not user selected an answer
             if (!guess) {
-                $("#timerMessage").text("Out of Time!");
+
+                //clear display for next question
+                $("#gameQuestion").remove();    
+                $("#answer1").remove();
+                $("#answer2").remove();
+                $("#answer3").remove();
+                $("#answer4").remove();
+
+                //message indicating time's up
+                $("#qdiv").append("<p id='timeoutMessage'></p>");
+                $("#timeoutMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
+                $("#timeoutMessage").text("Out of Time!");
 
                 //increment unanswered
                 UnAnswered++;
 
                 //display the correct answer
-                $("#answer1").text("The correct answer is: " + correctAnswer);
+                $("#a1div").append("<p id='caMessage'></p>");
+                $("#caMessage").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});                
+                $("#caMessage").text("The correct answer is: " + correctAnswer);
 
                 //reset time
                 time =  30;
 
-                console.log("----------------------------------------");
-                console.log(qnumber);
                 //increment qnumber for next question
                 qnumber++;
-                console.log("qnumber incremented click 4");
-                console.log(qnumber);
-                console.log("----------------------------------------");
-
-                setTimeout(function() {
-                    //clear display for next question
-                    $("#gameQuestion").remove();    
-                    $("#answer1").remove();
-                    $("#answer2").remove();
-                    $("#answer3").remove();
-                    $("#answer4").remove();
-                }, 5000);
 
                 //confirm whether the question count has reached 10
                 setTimeout(checkQuestionCount, 5000);
@@ -552,17 +570,14 @@ $(document).ready(function(){
     
     function reset() {
 
-        console.log("--------------------------------");
-        console.log("reset clicked");
 
+        $("#timeoutMessage").remove();
         $("#score").remove();    
         $("#numCorrect").remove();
         $("#numWrong").remove();
         $("#noAnswer").remove();
         $("#startOver").remove();
-        $("#tdiv").append("<p id='timerMessage'></p>");
-
-        // console.log("reset has been called");
+        $("#timerMessage").text("");
 
         //reset question number
         qnumber = 1;
@@ -585,72 +600,64 @@ $(document).ready(function(){
         //display the first question
         setTimeout(displayQuestion, 3000);
 
-        console.log("reset calls displayQuestion");
-        // console.log("---------")
-
     }
 
     function checkQuestionCount() {
 
-        //clear display for next question
-        $("#gameQuestion").remove();    
-        $("#answer1").remove();
-        $("#answer2").remove();
-        $("#answer3").remove();
-        $("#answer4").remove();
+       
 
         //only disply the next question if the question count has not reached the total
         if(qnumber <= 10 && !timerRunning) {
-
-            console.log("--------------------------------------------");
-            console.log("checkQuestionCount called");
-            console.log(qnumber);
-            console.log("--------------------------------------------");
-
-            // //call startTimer function
-            // startTimer();
-
-            // //change timerRunning boolean to indicate that the timer is running
-            // timerRunning = true;
+            
+            $("#ciMessage").remove();
+            $("#iaMessage").remove();
+            $("#ia2Message").remove();
+            $("#timeoutMessage").remove();
+            $("#caMessage").remove();
+            $("#viaGiphy").remove();
+            $("#giphydiv").remove();
 
             //reset guess boolean
             guess = false;
 
             displayQuestion();
 
-            console.log("checkQuestionCount calls displayQuestion");
-
         }  
         
         if(qnumber > 10) {
 
-            console.log("--------------------------------------------");
-            console.log(qnumber);
-            console.log("Game Over");
-            console.log("--------------------------------------------");
-
-            //clear display so that the score can be displayed
-            $("#gameQuestion").remove();    
-            $("#answer1").remove();
-            $("#answer2").remove();
-            $("#answer3").remove();
-            $("#answer4").remove();
-            $("#timerMessage").remove();
+            $("#ciMessage").remove();
+            $("#caMessage").remove();
+            $("#timeoutMessage").remove();
+            $("#iaMessage").remove();
+            $("#ia2Message").remove();
+            $("#viaGiphy").remove();
+            $("#giphydiv").remove();
 
             //create <p> tags to hold answers 1 - 4
-            $("#qdiv").append("<h2 id='score'></h2>");
+            $("#qdiv").append("<p id='score'></p>");
             $("#a1div").append("<p id='numCorrect'></p>");
             $("#a2div").append("<p id='numWrong'></p>");
             $("#a3div").append("<p id='noAnswer'></p>");
             $("#a4div").append("<p id='startOver'></p>");
-    
+
+             //style <p> tags
+            $("#score").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});
+            $("#numCorrect").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});
+            $("#numWrong").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});
+            $("#noAnswer").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});
+            $("#startOver").css({"font-size": "38px", "text-align": "center"});
+            $("#startOver").hover(function(){
+            $(this).css({"background-color": "#DCBFD9", "border": "2px solid #486EC3"})},
+            function(){$(this).css({"background-color": "initial", "border": "none"})},
+            );
             $("#score").text("All done, here's how you did!");
 
             $("#numCorrect").text("Correct Answers: " + numberCorrect);
 
             $("#numWrong").text("Incorrect Answers: " + wrongAnswer);
 
-            $("#noAnswer").text("UnAnswered: " + UnAnswered);
+            $("#noAnswer").text("Unanswered: " + UnAnswered);
 
             $("#startOver").text("Start Over?");
 
