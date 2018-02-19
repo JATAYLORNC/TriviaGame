@@ -1,4 +1,4 @@
-# TriviaGame
+# Trivia Game
 
 Trivia Game consists of a set of 10 questions based on movies from Pixar.  Upon clicking on the start button, players have 30 seconds to select the correct answer to the question.  Hovering the mouse over the an answer will highlight it and enable the answer to be clicked on.  After selecting an answer, the game will indicate whether it is correct or not and a giphy related to the question will be displayed.  If the timer runs out before the question is answered this question will be recorded as unanswered and the game will move to the next question.  The game will automatically display the next question and reset the timer.  After all 10 questions have been completed a score will be displayed.  If you missed a question or want to see one of the giphys again just click on the "Start Over?" button to play again.
 
