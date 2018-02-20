@@ -8,7 +8,7 @@ $(document).ready(function(){
             a2: "Hamish", 
             a3: "Humphrey", 
             a4: "Hubert", 
-            giphyTag: '<div style="width:100%;height:0;padding-bottom:43%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/WFEZyFxxmZ0Vq" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disneypixar-animation-disney-boys-WFEZyFxxmZ0Vq"></a></p>',
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:43%;position:relative;" class="clearNextQ"><iframe src="https://giphy.com/embed/WFEZyFxxmZ0Vq" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p class="clearNextQ"><a href="https://giphy.com/gifs/disneypixar-animation-disney-boys-WFEZyFxxmZ0Vq"></a></p>',
             answer: 3
         },
         {
@@ -17,7 +17,7 @@ $(document).ready(function(){
             a2: "29", 
             a3: "70", 
             a4: "78", 
-            giphyTag: '<div style="width:100%;height:0;padding-bottom:56%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/hNU4HmhtpMPTO" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disney-pixar-up-disney-hNU4HmhtpMPTO"></a></p>',
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:56%;position:relative;" class="clearNextQ"><iframe src="https://giphy.com/embed/hNU4HmhtpMPTO" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p class="clearNextQ"><a href="https://giphy.com/gifs/disney-pixar-up-disney-hNU4HmhtpMPTO"></a></p>',
             answer: 4
         },
         {
@@ -26,7 +26,7 @@ $(document).ready(function(){
             a2: "Sid", 
             a3: "Molly", 
             a4: "Andy", 
-            giphyTag: '<div style="width:100%;height:0;padding-bottom:55%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/RIVu1bR7N2jEA" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disney-laughing-pixar-RIVu1bR7N2jEA"></a></p>',
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:55%;position:relative;" class="clearNextQ"><iframe src="https://giphy.com/embed/RIVu1bR7N2jEA" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p class="clearNextQ"><a href="https://giphy.com/gifs/disney-laughing-pixar-RIVu1bR7N2jEA"></a></p>',
             answer: 2
         },
         {
@@ -35,7 +35,7 @@ $(document).ready(function(){
             a2: "Diva", 
             a3: "E", 
             a4: "M", 
-            giphyTag: '<div style="width:100%;height:0;padding-bottom:42%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/zuQTdinwThT20" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/the-incredibles-edna-mode-best-scene-zuQTdinwThT20"></a></p>',
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:42%;position:relative;" class="clearNextQ"><iframe src="https://giphy.com/embed/zuQTdinwThT20" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p class="clearNextQ"><a href="https://giphy.com/gifs/the-incredibles-edna-mode-best-scene-zuQTdinwThT20"></a></p>',
             answer: 3
         },
         {
@@ -44,7 +44,7 @@ $(document).ready(function(){
             a2: "Spot", 
             a3: "Fido", 
             a4: "Zog", 
-            giphyTag: '<div style="width:100%;height:0;padding-bottom:42%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/l9CSJHK88kMTe" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><pid="viaGiphy"><a href="https://giphy.com/gifs/disney-pixar-disney-the-good-dinosaur-l9CSJHK88kMTe"></a></p>',
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:42%;position:relative;" class="clearNextQ"><iframe src="https://giphy.com/embed/l9CSJHK88kMTe" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p class="clearNextQ"><a href="https://giphy.com/gifs/disney-pixar-disney-the-good-dinosaur-l9CSJHK88kMTe"></a></p>',
             answer: 2
         },
         {
@@ -53,7 +53,7 @@ $(document).ready(function(){
             a2: "Lomas Lindas", 
             a3: "Corpus Christi", 
             a4: "San Miguel", 
-            giphyTag: '<div style="width:100%;height:0;padding-bottom:42%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/3ohfFi82eai7LjcdJS" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/am85-mexico-3ohfFi82eai7LjcdJS"></a></p>',
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:42%;position:relative;" class="clearNextQ"><iframe src="https://giphy.com/embed/3ohfFi82eai7LjcdJS" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p class="clearNextQ""><a href="https://giphy.com/gifs/am85-mexico-3ohfFi82eai7LjcdJS"></a></p>',
             answer: 1
         },
         {
@@ -62,7 +62,7 @@ $(document).ready(function(){
             a2: "1225 Sycamore Street", 
             a3: "324 Oak Tree Lane", 
             a4: "1200 Park Avenue", 
-            giphyTag: '<div style="width:100%;height:0;padding-bottom:56%;position:relative;", id="giphydiv"><iframe src="https://giphy.com/embed/lKEstjh615lrW" width="100%" height="99%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disney-pixar-disney-toy-story-3-lKEstjh615lrW"></a></p>',
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:56%;position:relative;", class="clearNextQ"><iframe src="https://giphy.com/embed/lKEstjh615lrW" width="100%" height="99%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p class="clearNextQ"><a href="https://giphy.com/gifs/disney-pixar-disney-toy-story-3-lKEstjh615lrW"></a></p>',
             answer: 2
         },
         {
@@ -71,7 +71,7 @@ $(document).ready(function(){
             a2: "Hot Air Balloon Operator", 
             a3: "Balloon Salesman", 
             a4: "Aviator", 
-            giphyTag: '<div style="width:100%;height:0;padding-bottom:56%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/EA8GA5ZkkcSoU" width="100%" height="99%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disneypixar-disney-pixar-EA8GA5ZkkcSoU"></a></p>',
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:56%;position:relative;" class="clearNextQ"><iframe src="https://giphy.com/embed/EA8GA5ZkkcSoU" width="100%" height="99%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p class="clearNextQ"><a href="https://giphy.com/gifs/disneypixar-disney-pixar-EA8GA5ZkkcSoU"></a></p>',
             answer: 3
         },
         {
@@ -80,7 +80,7 @@ $(document).ready(function(){
             a2: "Alpha, Beta, Gamma, Dug", 
             a3: "Max, Lollipop, M.J., Tiger", 
             a4: "Alpha, Beta, Gamma, Kevin", 
-            giphyTag: '<div style="width:100%;height:0;padding-bottom:52%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/13SOv8x3U5SMdW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/reaction-disney-dogs-13SOv8x3U5SMdW"></a></p>',
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:52%;position:relative;" class="clearNextQ"><iframe src="https://giphy.com/embed/13SOv8x3U5SMdW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p class="clearNextQ"><a href="https://giphy.com/gifs/reaction-disney-dogs-13SOv8x3U5SMdW"></a></p>',
             answer: 2
         },
         {
@@ -89,7 +89,7 @@ $(document).ready(function(){
             a2: "350 pounds", 
             a3: "275 pounds", 
             a4: "Way too much",
-            giphyTag: '<div style="width:100%;height:0;padding-bottom:52%;position:relative;" id="giphydiv"><iframe src="https://giphy.com/embed/g18rgL6Ou0ODC" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p id="viaGiphy"><a href="https://giphy.com/gifs/disney-pixar-the-incredibles-g18rgL6Ou0ODC"></a></p>', 
+            giphyTag: '<div style="width:100%;height:0;padding-bottom:52%;position:relative;" class="clearNextQ"><iframe src="https://giphy.com/embed/g18rgL6Ou0ODC" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p class="clearNextQ"><a href="https://giphy.com/gifs/disney-pixar-the-incredibles-g18rgL6Ou0ODC"></a></p>', 
             answer: 2
         },
     ];
@@ -135,12 +135,8 @@ $(document).ready(function(){
 
     //function to start the game 
     $("#startGame").click(function() {
-
         $("#startGame").remove();
-
-
         displayQuestion();
-        
     });
 
         //display the question and the 4 possible answers
@@ -158,7 +154,7 @@ $(document).ready(function(){
         guess = false;
 
         //create a <p> tag to hold the game question
-        $("#qdiv").append("<p id='gameQuestion'></p>");
+        $("#qdiv").append("<p id='gameQuestion' class='qanda'></p>");
 
         //style <p> tag for question
         $("#gameQuestion").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});
@@ -166,31 +162,16 @@ $(document).ready(function(){
         //display the question
         $("#gameQuestion").text(gameQuestions[qnumber-1].question);
 
-        //create <p> tags to hold answers 1 - 4
-        $("#a1div").append("<p id='answer1'></p>");
-        $("#a2div").append("<p id='answer2'></p>");
-        $("#a3div").append("<p id='answer3'></p>");
-        $("#a4div").append("<p id='answer4'></p>");
+        //create <buton> tags to hold answers 1 - 4
+        $("#a1div").append("<Button type='button' id='answer1' class='answer qanda btn-block' value=1></button>");
+        $("#a2div").append("<Button type='button' id='answer2' class='answer qanda btn-block' value=2></button>");
+        $("#a3div").append("<Button type='button' id='answer3' class='answer qanda btn-block' value=3></button>");
+        $("#a4div").append("<Button type='button' id='answer4' class='answer qanda btn-block' value=4></button>");
 
-        //style <p> tags
-        $("#answer1").css({"font-size": "38px", "text-align": "center"});
-        $("#answer1").hover(function(){
-            $(this).css({"background-color": "#DCBFD9", "border": "2px solid #486EC3"})},
-            function(){$(this).css({"background-color": "initial", "border": "none"})},
-        );
-        $("#answer2").css({"font-size": "38px", "text-align": "center"});
-        $("#answer2").hover(function(){
-            $(this).css({"background-color": "#DCBFD9", "border": "2px solid #486EC3"})},
-            function(){$(this).css({"background-color": "initial", "border": "none", })},
-        );
-        $("#answer3").css({"font-size": "38px", "text-align": "center"});
-        $("#answer3").hover(function(){
-            $(this).css({"background-color": "#DCBFD9", "border": "2px solid #486EC3"})},
-            function(){$(this).css({"background-color": "initial", "border": "none"})},
-        );
-        $("#answer4").css({"font-size": "38px", "text-align": "center"});
-        $("#answer4").hover(function(){
-            $(this).css({"background-color": "#DCBFD9", "border": "2px solid #486EC3"})},
+        //style <button> tags
+        $(".answer").css({"font-size": "38px", "text-align": "center", "background-color": "transparent", "border": "none", "outline": "none"});
+        $(".answer").hover(function(){
+            $(this).css({"background-color": "#DCBFD9", "border": "2px solid #486EC3", "cursor": "pointer"})},
             function(){$(this).css({"background-color": "initial", "border": "none"})},
         );
 
@@ -198,17 +179,18 @@ $(document).ready(function(){
         checkSize();
         
         //display each of the answers
-        $("#answer1").text(gameQuestions[qnumber-1].a1);
-        $("#answer2").text(gameQuestions[qnumber-1].a2);
-        $("#answer3").text(gameQuestions[qnumber-1].a3);
-        $("#answer4").text(gameQuestions[qnumber-1].a4);
+        $("#answer1").html(gameQuestions[qnumber-1].a1);
+        $("#answer2").html(gameQuestions[qnumber-1].a2);
+        $("#answer3").html(gameQuestions[qnumber-1].a3);
+        $("#answer4").html(gameQuestions[qnumber-1].a4);
 
         //grab giphyTag
         gTag = gameQuestions[qnumber-1].giphyTag;
 
-        //assign correct answer index to variable
+        //assign correct answer number to variable
         correctAnswerIndex = gameQuestions[qnumber-1].answer;
 
+        //assign correct answer string to variable
         if(correctAnswerIndex == 1) {
             correctAnswer = gameQuestions[qnumber-1].a1;
         } else if(correctAnswerIndex == 2) {
@@ -219,44 +201,10 @@ $(document).ready(function(){
             correctAnswer = gameQuestions[qnumber-1].a4;
         }
 
-        //define click event for selection of answer 1
-        $("#answer1").click(function() {
-
-            //assign the answer number to the variable userGuess
-            userGuess = 1;
-
+        //define click event for answers
+        $(".answer").click(function() {
+            userGuess = this.value;
             displayAnswer();
-            
-        });
-
-        //define click event for selection of answer 2
-        $("#answer2").click(function() {
-
-            //assign the answer number to the variable userGuess
-            userGuess = 2;
-
-            displayAnswer();
-
-        });
-
-        //define click event for selection of answer 3
-        $("#answer3").click(function() {
-
-            //assign the answer number to the variable userGuess
-            userGuess = 3;
-
-            displayAnswer();
-
-        });
-
-        //define click event for selection of answer 4
-        $("#answer4").click(function() {
-
-            //assign the answer number to the variable userGuess
-            userGuess = 4;
-
-            displayAnswer();
-
         });
     }
 
@@ -290,14 +238,10 @@ $(document).ready(function(){
             if (!guess) {
 
                 //clear display for next question
-                $("#gameQuestion").remove();    
-                $("#answer1").remove();
-                $("#answer2").remove();
-                $("#answer3").remove();
-                $("#answer4").remove();
+                $(".qanda").remove();
 
                 //message indicating time's up
-                $("#qdiv").append("<p id='timeoutMessage'></p>");
+                $("#qdiv").append("<p id='timeoutMessage' class='clearNextQ'></p>");
                 $("#timeoutMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
                 $("#timeoutMessage").text("Out of Time!");
 
@@ -308,7 +252,7 @@ $(document).ready(function(){
                 UnAnswered++;
 
                 //display the correct answer
-                $("#qdiv").append("<p id='caMessage'></p>");
+                $("#qdiv").append("<p id='caMessage' class='clearNextQ'></p>");
                 $("#caMessage").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});                
                 $("#caMessage").text("The correct answer is: " + correctAnswer);
 
@@ -320,20 +264,15 @@ $(document).ready(function(){
 
                 //confirm whether the question count has reached 10
                 setTimeout(checkQuestionCount, 5000);
-
             } 
         }  
     }
     
     function reset() {
 
-
+        //clear screen
         $("#timeoutMessage").remove();
-        $("#score").remove();    
-        $("#numCorrect").remove();
-        $("#numWrong").remove();
-        $("#noAnswer").remove();
-        $("#startOver").remove();
+        $(".clearScoreBoard").remove();    
         $("#timerMessage").text("");
 
         //reset question number
@@ -356,74 +295,53 @@ $(document).ready(function(){
 
         //display the first question
         setTimeout(displayQuestion, 3000);
-
     }
 
     function checkQuestionCount() {
 
-       
-
         //only disply the next question if the question count has not reached the total
         if(qnumber <= 10 && !timerRunning) {
             
-            $("#ciMessage").remove();
-            $("#iaMessage").remove();
-            $("#ia2Message").remove();
-            $("#timeoutMessage").remove();
-            $("#caMessage").remove();
-            $("#viaGiphy").remove();
-            $("#giphydiv").remove();
+            //clear screen for next question
+            $(".clearNextQ").remove();
 
             //reset guess boolean
             guess = false;
 
             displayQuestion();
-
         }  
         
         if(qnumber > 10) {
 
-            $("#ciMessage").remove();
-            $("#caMessage").remove();
-            $("#timeoutMessage").remove();
-            $("#iaMessage").remove();
-            $("#ia2Message").remove();
-            $("#viaGiphy").remove();
-            $("#giphydiv").remove();
+            //clear screen for display of score board
+            $(".clearNextQ").remove();
 
-            //create <p> tags to hold answers 1 - 4
-            $("#qdiv").append("<p id='score'></p>");
-            $("#a1div").append("<p id='numCorrect'></p>");
-            $("#a2div").append("<p id='numWrong'></p>");
-            $("#a3div").append("<p id='noAnswer'></p>");
-            $("#a4div").append("<p id='startOver'></p>");
+            //create <p> tags to hold score board
+            $("#qdiv").append("<p id='score' class='clearScoreBoard'></p>");
+            $("#a1div").append("<p id='numCorrect' class='score clearScoreBoard'></p>");
+            $("#a2div").append("<p id='numWrong' class='score clearScoreBoard'></p>");
+            $("#a3div").append("<p id='noAnswer' class='score clearScoreBoard'></p>");
+            $("#a4div").append("<p id='startOver' class='clearScoreBoard'></p>");
 
-             //style <p> tags
+            //style <p> tags
+            $(".score").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});
             $("#score").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});
-            $("#numCorrect").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});
-            $("#numWrong").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});
-            $("#noAnswer").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});
             $("#startOver").css({"font-size": "38px", "text-align": "center"});
             $("#startOver").hover(function(){
-            $(this).css({"background-color": "#DCBFD9", "border": "2px solid #486EC3"})},
+            $(this).css({"background-color": "#DCBFD9", "border": "2px solid #486EC3", "cursor": "pointer"})},
             function(){$(this).css({"background-color": "initial", "border": "none"})},
             );
 
             // run test to see if viewport has been resized
             checkSize();
 
+            //display score
             $("#score").text("All done, here's how you did!");
-
             $("#numCorrect").text("Correct Answers: " + numberCorrect);
-
             $("#numWrong").text("Incorrect Answers: " + wrongAnswer);
-
             $("#noAnswer").text("Unanswered: " + UnAnswered);
-
             $("#startOver").text("Start Over?");
-
             $("#startOver").click(reset);
-
         } 
     }
     
@@ -448,115 +366,90 @@ $(document).ready(function(){
          if (userGuess != correctAnswerIndex) {
 
              //clear display for next question
-             $("#gameQuestion").remove();    
-             $("#answer1").remove();
-             $("#answer2").remove();
-             $("#answer3").remove();
-             $("#answer4").remove();
+             $(".qanda").remove();
 
              //message indicating incorrect answer
-             $("#qdiv").append("<p id='iaMessage'></p>");
+             $("#qdiv").append("<p id='iaMessage' class='clearNextQ'></p>");
              $("#iaMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
              $("#iaMessage").text("That Is Incorrect!");
 
-             // run test to see if viewport has been resized
+            // run test to see if viewport has been resized
             checkSize();
 
-             //display answer GIPHY
-             $("#gdiv").append(gTag);
+            //display answer GIPHY
+            $("#gdiv").append(gTag);
              
-             //increment wrong answer count
-             wrongAnswer++;
+            //increment wrong answer count
+            wrongAnswer++;
 
-             $("#qdiv").append("<p id='ia2Message'></p>");
-             //display the correct answer
-             $("#ia2Message").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});                
-             $("#ia2Message").text("The correct answer is: " + correctAnswer);
+            //display the correct answer
+            $("#qdiv").append("<p id='ia2Message' class='clearNextQ'></p>");
+            $("#ia2Message").css({"font-size": "24px", "text-align": "center", "font-family": "'Times New Roman', Times, serif"});                
+            $("#ia2Message").text("The correct answer is: " + correctAnswer);
 
              // run test to see if viewport has been resized
             checkSize();
 
          } else {
 
-             //clear display for next question
-             $("#gameQuestion").remove();    
-             $("#answer1").remove();
-             $("#answer2").remove();
-             $("#answer3").remove();
-             $("#answer4").remove();
+            //clear display for next question
+            $(".qanda").remove();
 
-             //message indicating correct answer
-             $("#qdiv").append("<p id='ciMessage'></p>");
-             $("#ciMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
-             $("#ciMessage").text("You Are Correct!");
+            //message indicating correct answer
+            $("#qdiv").append("<p id='ciMessage' class='clearNextQ'></p>");
+            $("#ciMessage").css({"font-size": "28px", "text-align": "center", "font-family": "'Times New Roman', Times, serif", "font-weight": "bold"});                
+            $("#ciMessage").text("You Are Correct!");
 
-             // run test to see if viewport has been resized
+            // run test to see if viewport has been resized
             checkSize();
 
-             //display answer GIPHY
-             $("#gdiv").append(gTag);
+            //display answer GIPHY
+            $("#gdiv").append(gTag);
 
-             //increment number correct
-             numberCorrect++
+            //increment number correct
+            numberCorrect++
          }
 
-         //confirm whether the question count has reached 10
-         setTimeout(checkQuestionCount, 5000);
+        //confirm whether the question count has reached 10
+        setTimeout(checkQuestionCount, 5000);
     }
     
-    //Function to the css rule
+    //function to change font sizes if the font-size of "gameTitle" indicates a specific @media query has been activated
     function checkSize(){
         if ($("#gameTitle").css("font-size") == "48px"){
             $("#gameQuestion").css({"font-size": "22px"});
-            $("#answer1").css({"font-size": "30px"});
-            $("#answer2").css({"font-size": "30px"});
-            $("#answer3").css({"font-size": "30px"});
-            $("#answer4").css({"font-size": "30px"});
+            $(".answer").css({"font-size": "30px"});
             $("#iaMessage").css({"font-size": "22px"});
             $("#ia2Message").css({"font-size": "19px"});
             $("#ciMessage").css({"font-size": "22px"});
             $("#timeoutMessage").css({"font-size": "22px"});
             $("#score").css({"font-size": "22px"});
-            $("#numCorrect").css({"font-size": "19px"});
-            $("#numWrong").css({"font-size": "19px"});
-            $("#noAnswer").css({"font-size": "19px"});
+            $(".score").css({"font-size": "19px"});
             $("#startOver").css({"font-size": "30px"});
         }
 
         if ($("#gameTitle").css("font-size") == "36px"){
             $("#gameQuestion").css({"font-size": "17px"});
-            $("#answer1").css({"font-size": "24px"});
-            $("#answer2").css({"font-size": "24px"});
-            $("#answer3").css({"font-size": "24px"});
-            $("#answer4").css({"font-size": "24px"});
+            $(".answer").css({"font-size": "24px"});
             $("#iaMessage").css({"font-size": "17px"});
             $("#ia2Message").css({"font-size": "14px"});
             $("#ciMessage").css({"font-size": "22px"});
             $("#timeoutMessage").css({"font-size": "22px"});
             $("#score").css({"font-size": "22px"});
-            $("#numCorrect").css({"font-size": "14px"});
-            $("#numWrong").css({"font-size": "14px"});
-            $("#noAnswer").css({"font-size": "14px"});
+            $(".score").css({"font-size": "14px"});
             $("#startOver").css({"font-size": "24px"});
         }
 
         if ($("#gameTitle").css("font-size") == "24px"){
             $("#gameQuestion").css({"font-size": "14px"});
-            $("#answer1").css({"font-size": "20px"});
-            $("#answer2").css({"font-size": "20px"});
-            $("#answer3").css({"font-size": "20px"});
-            $("#answer4").css({"font-size": "20px"});
+            $(".#answer").css({"font-size": "20px"});
             $("#iaMessage").css({"font-size": "14px"});
             $("#ia2Message").css({"font-size": "11px"});
             $("#ciMessage").css({"font-size": "19px"});
             $("#timeoutMessage").css({"font-size": "19px"});
             $("#score").css({"font-size": "19px"});
-            $("#numCorrect").css({"font-size": "11px"});
-            $("#numWrong").css({"font-size": "11px"});
-            $("#noAnswer").css({"font-size": "11px"});
+            $(".score").css({"font-size": "11px"});
             $("#startOver").css({"font-size": "20px"});
         }
-
     }
-    
 });

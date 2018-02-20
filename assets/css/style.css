@@ -36,6 +36,7 @@ color: indigo;
 #startGame:hover {
     background-color: #ffffff;
     border: 2px solid #044db7;
+    cursor: pointer;
 }
 
 #timerMessage {
